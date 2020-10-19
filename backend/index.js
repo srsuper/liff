@@ -5,7 +5,7 @@ const json = await request.get({
   url: `https://api.line.me/oauth2/v2.1/verify?access_token=${accessToken}`,
   json: true
 })
-if (json.client_id !== CHANNEL_ID) {
+if (json.client_id !== 1655113933) {
   return 401
 }
 
@@ -24,7 +24,7 @@ await request.post({
  headers: { "Content-Type": "application/x-www-form-urlencoded" },
  form: {
    access_token: `${accessToken}`,
-   client_id: CHANNEL_ID,
-   client_secret: CHANNEL_SECRET
+   client_id: 1655113933,
+   client_secret: b59486b6f7cb09e85bb4c586fb208a91
  } 
 })
