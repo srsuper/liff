@@ -34,11 +34,11 @@
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     async function main() {
-      await liff.init({ liffId: "YOUR-LIFF-ID" })
+      await liff.init({ liffId: "1655113933-GMB4oyD6" })
       if (liff.isLoggedIn()) {
         getUserProfile()
       } else {
-        liff.login({ redirectUri: "YOUR-GITHUB-PAGES-DOMAIN/liff/path/" })
+        liff.login({ redirectUri: "https://srsuper.github.io/liff/path/" })
       }
     }
     main()
