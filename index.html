@@ -15,30 +15,42 @@
     </script>
   </head>
   <body>
-    <p id="os"><b>OS: </b></p>
-    <p id="language"><b>Language: </b></p>
-    <p id="version"><b>Version: </b></p>
-    <p id="isInClient"><b>isInClient: </b></p>
-    <p id="accessToken"><b>AccessToken: </b></p>
-    <img id="pictureUrl" />
+    <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form class="form-signin">
+              <img id="pictureUrl" />
+              <p id="displayName"><b>displayName: </b></p>
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email address</label>
+              </div>
 
-    <p id="userId"><b>userId: </b></p>
-    <p id="displayName"><b>displayName: </b></p>
-    <p id="statusMessage"><b>statusMessage: </b></p>
-    <p id="decodedIDToken"><b>email2: </b></p>
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              </div>
 
-    <p id="type"><b>type: </b></p>
-    <p id="viewType"><b>viewType: </b></p>
-    <p id="utouId"><b>utouId: </b></p>
-    <p id="roomId"><b>roomId: </b></p>
-    <p id="groupId"><b>groupId: </b></p>
-
-    <p id="friendship"><b>isFriendship: </b></p>
-    <p id="scanCode"><b>Code: </b></p>
-    <p id="isLoggedIn"><b>isLoggedIn: </b></p>
-    <p id="universalLink1"><b>Universal Link: </b></p>
-    <p id="universalLink2"><b>Universal Link with Query params: </b></p>
-    <p><a href="path/?param=9">Link to Path</a></p>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
+              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+   
 
     <button id="btnMsg" onclick="sendMsg()">Send Message</button>
     <button id="btnShare" onclick="shareMsg()">Share Target Picker</button>
